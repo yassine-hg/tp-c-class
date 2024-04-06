@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+
+
+int main() {
+int i , n , som;
+som = 0;
+printf("enter un entier");
+scanf("%d" , &n);
+for (i = 0 ; i < n ;i++){
+    som += n;
+}
+printf("somme: %d",som);
+return 0;
+}
