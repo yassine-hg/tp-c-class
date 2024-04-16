@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+    int list[] = {2,5,48,5,65,78,68,5,12,58};
+    int max = list[0];
+    int min = list[0];
+    int min_index = 0;
+    int max_index = 0;
+    int n = sizeof(list)/sizeof(list[0]);
+    for (int i=0; i<n ; i++){
+        if (list[i] > max){
+            max = list[i];
+            max_index = i;
+        }
+    }
+    for (int i = 0 ; i < n ; i++){
+        if (list[i] < min){
+            min = list[i];
+            min_index = i;
+        }
+    }
+    printf("the min value in this list: %d\n" , max);
+    printf("the max value in this list: %d\n" , min);
+    printf("the max index is %d\n" , min_index);
+    printf("the min index is %d\n" , max_index);
+
+}
